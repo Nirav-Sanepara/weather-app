@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'
+import AutoData from './Componant/AutoData';
+import FetchData from './Componant/FetchData';
 
-function App() {
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <div className="container " >
+        <div className="row mt-4 " >
+          <div className="col-lg-8 " >
+            <AutoData />
+          </div>
+          <div className="col-lg-4 ">
 
+            <FetchData />
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
 export default App;
